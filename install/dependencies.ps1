@@ -20,4 +20,8 @@ if (Get-Command 'code' -ErrorAction SilentlyContinue) {
     apt-get install -y /tmp/config-install/vscode.deb
 }
 
-bash ./install/dependencies/docker.sh
+if (Get-Command 'docker' -ErrorAction SilentlyContinue) {
+    Write-Host "skip: docker is already installed."
+} else {
+    bash ./install/dependencies/docker.sh
+}

@@ -1,3 +1,10 @@
+if (Get-Command 'konsave' -ErrorAction SilentlyContinue) {
+    Write-Host "skip: konsave is already installed."
+    exit 0
+}\
+
+Write-Host "-- konsave installation --"
+
 Write-Host "-- KDE plasma config --"
 
 Write-Host "Installing Python packages..."

@@ -1,9 +1,9 @@
-Write-Host "-- xremap installation --"
-
 if (Test-Path -Path "./xremap/xremap") {
     Write-Host "skip: xremap is already installed."
     exit 0
 }
+
+Write-Host "-- xremap installation --"
 
 Write-Host "Downloading xremap..."
 Invoke-WebRequest -Uri "https://github.com/xremap/xremap/releases/download/v0.14.3/xremap-linux-x86_64-kde.zip" -OutFile "/tmp/config-install/xremap.zip"
