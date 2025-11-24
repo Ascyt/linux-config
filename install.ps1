@@ -6,8 +6,13 @@ if ((whoami) -ne 'root') {
 
 New-Item -ItemType Directory -Path "/tmp/config-install"
 
+if (!(Test-Path -Path $PROFILE)) {
+    New-Item -ItemType File -Path $PROFILE -Force
+}
+
 sudo pwsh ./install/dependencies.ps1
 sudo pwsh ./install/xremap.ps1
+sudo pwsh ./install/konsave.ps1
 
 Write-Host "Cleaning up..."
 

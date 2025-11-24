@@ -1,4 +1,3 @@
-#!/snap/bin/pwsh
 Write-Host "-- xremap installation --"
 
 if (Test-Path -Path "./xremap/xremap") {
