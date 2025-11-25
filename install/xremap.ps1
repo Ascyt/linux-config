@@ -1,4 +1,5 @@
 if (Test-Path -Path "./xremap/xremap") {
+    systemctl restart xremap-startup.service
     Write-Host "skip: xremap is already installed."
     exit 0
 }
@@ -33,5 +34,13 @@ filip ALL=(ALL) NOPASSWD: /home/filip/config/xremap/xremap /home/filip/config/xr
 
 chmod 0440 /etc/sudoers.d/filip
 
+if (((systemctl is-active xremap-startup.service) -eq 'active')) {
+    Write-Host "Stopping xremap service..."
+    systemctl stop xremap-startup.service
+}
+
 Write-Host "Enabling xremap service..."
 systemctl enable xremap-startup.service
+
+Write-Host "Starting xremap service..."
+systemctl start xremap-startup.service

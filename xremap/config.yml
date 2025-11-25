@@ -47,3 +47,4 @@ keymap:
 
       Alt-f: Ctrl-PageDown
       Alt-j: Ctrl-PageUp
+      Alt-w: Ctrl-W
