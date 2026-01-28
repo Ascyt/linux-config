@@ -1,6 +1,6 @@
 Write-Host "-- Basic dependencies installation --"
 
-apt-get install -y git wl-clipboard p7zip python3-full python3-pip pipx docker-compose-plugin default-jdk
+apt-get install -y git wl-clipboard p7zip python3-full python3-pip pipx docker-compose-plugin default-jdk dotnet-sdk-10.0
 
 if (!(Select-String -Path $PROFILE -Pattern '\$env:PATH \+= ":\$HOME/.local/bin"')) {
     Add-Content $PROFILE '$env:PATH += ":$HOME/.local/bin"'

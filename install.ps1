@@ -13,6 +13,7 @@ if (!(Test-Path -Path $PROFILE)) {
 sudo pwsh ./install/dependencies.ps1
 sudo pwsh ./install/xremap.ps1
 sudo pwsh ./install/konsave.ps1
+sudo pwsh ./install/discord.ps1
 
 Write-Host "Cleaning up..."
 
