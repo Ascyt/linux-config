@@ -47,3 +47,5 @@ keymap:
 
       Alt-f: Ctrl-Alt-f
       Alt-j: Ctrl-Alt-j
+
+      Alt-w: Ctrl-w

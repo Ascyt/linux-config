@@ -25,3 +25,9 @@ if (Get-Command 'docker' -ErrorAction SilentlyContinue) {
 } else {
     bash ./install/dependencies/docker.sh
 }
+
+if (Get-Command 'github-desktop' -ErrorAction SilentlyContinue) {
+    Write-Host "skip: github-desktop is already installed."
+} else {
+    bash ./install/dependencies/github-desktop.sh
+}
