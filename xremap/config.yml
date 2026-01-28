@@ -1,4 +1,4 @@
-# Run using `sudo xremap ./xremap/config.yml --mouse`
+# Run using `sudo ./xremap/xremap ./xremap/config.yml --mouse`
 
 virtual_modifiers:
   - CapsLock
@@ -10,20 +10,20 @@ keymap:
       CapsLock-s: down
       CapsLock-d: right
 
-      CapsLock-Alt-w: home
-      CapsLock-Alt-a: Ctrl-left
-      CapsLock-Alt-s: end
-      CapsLock-Alt-d: Ctrl-right
+      Alt-CapsLock-w: home
+      Alt-CapsLock-a: Ctrl-left
+      Alt-CapsLock-s: end
+      Alt-CapsLock-d: Ctrl-right
 
       CapsLock-j: backspace
       CapsLock-k: Ctrl-backspace
       CapsLock-l: [backspace, backspace, backspace, backspace]
       CapsLock-semicolon: [Shift-home, backspace]
 
-      CapsLock-Shift-j: Shift-left
-      CapsLock-Shift-k: Ctrl-Shift-left
-      CapsLock-Shift-l: [Shift-left, Shift-left, Shift-left, Shift-left]
-      CapsLock-Shift-semicolon: Shift-home
+      Alt-CapsLock-j: Shift-left
+      Alt-CapsLock-k: Ctrl-Shift-left
+      Alt-CapsLock-l: [Shift-left, Shift-left, Shift-left, Shift-left]
+      Alt-CapsLock-semicolon: Shift-home
 
       CapsLock-f: Super-m
 
@@ -45,6 +45,5 @@ keymap:
           #Ctrl-dot
         ]
 
-      Alt-f: Ctrl-PageDown
-      Alt-j: Ctrl-PageUp
-      Alt-w: Ctrl-W
+      Alt-f: Ctrl-Alt-f
+      Alt-j: Ctrl-Alt-j
