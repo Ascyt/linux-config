@@ -49,3 +49,4 @@ keymap:
       Alt-j: Ctrl-Alt-j
 
       Alt-Comma: Ctrl-Comma
+      Ctrl-Alt-Comma: Ctrl-Alt-Comma
